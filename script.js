@@ -3,6 +3,7 @@
 
 const id = document.getElementById("focus");
 const div = document.querySelector(".div");
+div.classList.remove("div");
 
-id.onmouseenter = () => div.classList.remove("div");
-id.onmouseleave = () => div.classList.add("div");
+id.onmouseenter = () => div.classList.add("div");
+id.onmouseleave = () => div.classList.remove("div");
