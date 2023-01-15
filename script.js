@@ -2,8 +2,7 @@
 //  При пропажі фокусу - <div> так само пропадає
 
 const id = document.getElementById("focus");
-const div = document.querySelector(".div");
-div.classList.remove("div");
+const div = document.querySelector("div");
 
 id.onmouseenter = () => div.classList.add("div");
 id.onmouseleave = () => div.classList.remove("div");
